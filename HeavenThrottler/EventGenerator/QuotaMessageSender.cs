@@ -11,8 +11,8 @@ namespace EventGenerator
     /// </summary>
     public class QuotaMessageSender
     {
-        const string ServiceBusConnectionString = "Endpoint=sb://heavengo.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=I2b9811N1AgnCXTXfW6NGhfQyhd5GuqXBdIJ7c18SBM=";
-        const string QueueName = "stockq";
+        const string ServiceBusConnectionString = "<connection string goes here>";
+        const string QueueName = "<stock name>";
 
         private static Lazy<MessagingFactory> senderMessagingFactory =
             new Lazy<MessagingFactory>(() => MessagingFactory.CreateFromConnectionString(ServiceBusConnectionString));
