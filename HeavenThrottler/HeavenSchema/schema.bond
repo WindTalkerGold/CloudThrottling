@@ -1,0 +1,14 @@
+namespace HeavenSchema
+
+struct QuotaMesasage
+{
+    0: string SourceId;
+    1: int32 Allowance;
+}
+
+struct Message
+{
+    0: string SourceId;
+    1: string Content;
+    // may contain other value
+}
